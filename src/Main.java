@@ -4,7 +4,10 @@ public class Main {
     public static void main(String[] args) {
 
 
-
+        System.out.println("APRENDIENDO COMANDOS GIT");
+        System.out.println("COMANDOS GIT - ADD");
+        System.out.println("COMANDOS GIT - COMMIT");
+        System.out.println("COMANDOS GIT - PUSH");
 
 
 
