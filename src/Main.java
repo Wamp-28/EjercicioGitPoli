@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
@@ -10,11 +11,14 @@ public class Main {
         System.out.println("COMANDOS GIT - PUSH");
 
 
+        Random aleatorio = new Random();
+        int numero;
+        for (int i = 0; i <= 20; i++) {
+            numero = aleatorio.nextInt(50);
 
+            System.out.println("Numero generado: " + numero);
 
-
-
-
+        }
 
 
     }
