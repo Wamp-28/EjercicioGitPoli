@@ -6,8 +6,8 @@ public class Main {
 
         // vector- matriz
 
-        /*
-        int[] numeros = {10,20,30,40,50};
+
+        int[] numeros = {10, 20, 30, 40, 50};
 
 
         System.out.println(numeros[0]);
@@ -21,23 +21,49 @@ public class Main {
         System.out.println("COMANDOS GIT - COMMIT");
         System.out.println("COMANDOS GIT - PUSH");
 
-
+/*
         Random aleatorio = new Random();
         int numero;
         for (int i = 0; i <= 20; i++) {
             numero = aleatorio.nextInt(50);
 
             System.out.println("Numero generado: " + numero);
+*/
 
-            //test cualquier cosa
+        Random aleatorio = new Random();
 
+        int[][] matriz = new int[3][4];
+
+        // Llenar matriz
+        for (int i = 0; i < matriz.length; i++) {
+
+            for (int j = 0; j < matriz[i].length; j++) {
+
+                matriz[i][j] = aleatorio.nextInt(100) + 1;
+            }
         }
 
+        // Mostrar matriz
+        for (int i = 0; i < matriz.length; i++) {
 
+            for (int j = 0; j < matriz[i].length; j++) {
+
+                System.out.print(matriz[i][j] + "\t");
+            }
+
+            System.out.println();
+        }
     }
 
 
 }
+
+
+
+
+
+
+
 
 
 
@@ -363,4 +389,4 @@ public static String saludo(String nombre){
 
     }
 
-    */
+*/
