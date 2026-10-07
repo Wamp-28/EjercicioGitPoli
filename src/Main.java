@@ -4,7 +4,75 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        // vector- matriz
+    mostrarPares(10);
+
+    }
+
+
+    public static void mostrarPares(int numero){
+
+        if(numero<=0){
+            return;
+        }
+        if(numero % 2 == 0){
+            System.out.println(numero);
+        }
+
+        mostrarPares(numero-1);
+
+    }
+
+
+
+
+}
+
+
+
+
+
+/*
+
+ int res = factorial(5);
+
+        System.out.println("EL FACTORIAL ES: " + res);
+ // 5*4*3*2*1= 120
+
+    public static int factorial(int numero){
+
+        if(numero==1){
+            return 1;
+        }
+        return numero * factorial(numero-1);
+    }
+ */
+
+/*
+    public static void contar(int numero){
+
+        if(numero>5){
+            return;
+        }
+        System.out.println(numero);
+
+        contar(numero+1);
+
+    }
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ // vector- matriz
 
 
         int[] numeros = {10, 20, 30, 40, 50};
@@ -28,39 +96,32 @@ public class Main {
             numero = aleatorio.nextInt(50);
 
             System.out.println("Numero generado: " + numero);
-*/
 
-        Random aleatorio = new Random();
 
-        int[][] matriz = new int[3][4];
+Random aleatorio = new Random();
 
-        // Llenar matriz
+int[][] matriz = new int[3][4];
+
+// Llenar matriz
         for (int i = 0; i < matriz.length; i++) {
 
-            for (int j = 0; j < matriz[i].length; j++) {
+        for (int j = 0; j < matriz[i].length; j++) {
 
-                matriz[i][j] = aleatorio.nextInt(100) + 1;
-            }
+matriz[i][j] = aleatorio.nextInt(100) + 1;
+        }
         }
 
         // Mostrar matriz
         for (int i = 0; i < matriz.length; i++) {
 
-            for (int j = 0; j < matriz[i].length; j++) {
+        for (int j = 0; j < matriz[i].length; j++) {
 
-                System.out.print(matriz[i][j] + "\t");
+        System.out.print(matriz[i][j] + "\t");
             }
 
-            System.out.println();
+                    System.out.println();
         }
-    }
-
-
-}
-
-
-
-
+ */
 
 
 
